@@ -30,7 +30,8 @@ DEBUG = False
 #DEBUG = True
 
 #ALLOWED_HOSTS = ['127.0.0.1']
-ALLOWED_HOSTS = ['*',]
+ALLOWED_HOSTS = ['*',
+                 'https://django1-production.up.railway.app/',]
 
 # Application definition
 
@@ -123,7 +124,7 @@ USE_TZ = False
 
 STATIC_URL = 'static/'
 STATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')
-CSRF_TRUSTED_ORIGINS = ['https://django1-production.up.railway.app/']
+CSRF_TRUSTED_ORIGINS = ['https://django1-production.up.railway.app/',]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
